@@ -108,14 +108,14 @@ def extract_cell_Max_speed(row_element):
 
 def extract_cell_SCM_speed(row_element):
     try:
-        return float(row_element.find("td", "Max-speed")["data-sort-value"])
+        return float(row_element.find("td", "SCM-speed")["data-sort-value"])
     except KeyError:
         return -1
 
 
 def extract_cell_0_SCM_time(row_element):
     try:
-        return float(row_element.find("td", "Max-speed")["data-sort-value"])
+        return float(row_element.find("td", "0-SCM-time")["data-sort-value"])
     except KeyError:
         return -1
 
